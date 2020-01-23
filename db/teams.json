@@ -1,0 +1,61 @@
+{
+  "team1": {
+    "name": "Bulls",
+    "date": "01/23/2020",
+    "time": "7:15am CST",
+    "player1": "Delorean Sparks",
+    "player2": "Eddie Shelton",
+    "player3": "James Reagon",
+    "player4": "Kathan Tate",
+    "player5": "Kendal James",
+    "isWaitlist": false
+  },
+
+  "team2": {
+    "name": "Clippers",
+    "date": "01/23/2020",
+    "time": "7:17am CST",
+    "player1": "Lawson Jones",
+    "player2": "Lamar Poe",
+    "player3": "Nick Madsen",
+    "player4": "Pete Becker",
+    "player5": "Michael Scruggs",
+    "isWaitlist": false
+  },
+
+  "team3": {
+    "name": "Lakers",
+    "date": "01/23/2020",
+    "time": "7:30am CST",
+    "player1": "Nick Lee",
+    "player2": "Leavett Biles",
+    "player3": "Penny Collins",
+    "player4": "Quinton McCroskey",
+    "player5": "Mel Griffin",
+    "isWaitlist": false
+  },
+
+  "team4": {
+    "name": "Grizzlies",
+    "date": "01/23/2020",
+    "time": "7:35am CST",
+    "player1": "Solondro Lee",
+    "player2": "Malcolm Crawford",
+    "player3": "Spencer Elosiebo",
+    "player4": "Randolph Williams",
+    "player5": "Marlon Boyd",
+    "isWaitlist": false
+  },
+
+  "team5": {
+    "name": "Celtics",
+    "date": "01/23/2020",
+    "time": "7:36am CST",
+    "player1": "Luke Coleman",
+    "player2": "Mitch Wersing",
+    "player3": "D'Juan Epps",
+    "player4": "Roger Parker",
+    "player5": "Markee Thomas",
+    "isWaitlist": false
+  }
+}
