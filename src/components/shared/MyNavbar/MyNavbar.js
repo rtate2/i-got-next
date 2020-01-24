@@ -18,13 +18,13 @@ class MyNavbar extends React.Component {
                 <Link className="nav-link" to="/home">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="">Teams</Link>
+                <Link className="nav-link" to="/teams">Teams</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="">Waitlist</Link>
+                <Link className="nav-link" to="/waitlist">Waitlist</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="">Available Players</Link>
+                <Link className="nav-link" to="/availableplayers">Available Players</Link>
               </li>
             </ul>
           </div>
