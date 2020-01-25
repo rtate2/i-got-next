@@ -22,4 +22,6 @@ const getTeams = () => new Promise((resolve, reject) => {
 
 const getSingleTeam = (teamId) => axios.get(`${baseUrl}/teams/${teamId}.json`);
 
-export default { getTeams, getSingleTeam };
+const deleteTeam = (teamId) => axios.delete(`${baseUrl}/teams/${teamId}.json`);
+
+export default { getTeams, getSingleTeam, deleteTeam };
