@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 import teamData from '../../../helpers/data/teamData';
 
@@ -11,10 +12,12 @@ class Teams extends React.Component {
   state = {
     teams: [],
     showTeamForm: false,
+    time: '',
   };
 
   componentDidMount() {
     this.getAllTeams();
+    this.setState({ time: moment() });
   }
 
   getAllTeams = () => {
@@ -39,12 +42,15 @@ class Teams extends React.Component {
   }
 
   render() {
+    const { time, teams } = this.state;
+    const nonWaitlistTeams = teams.filter((team) => team.isWaitlist !== true);
+
     return (
       <div className="Teams">
         <h1>Teams</h1>
         { this.state.showPlayerForm && <NewTeam addTeam={this.addTeam} /> }
         <div className="items d-flex flex-wrap">
-          {this.state.teams.map((team) => <Team key={team.id} team={team} deleteTeam={this.deleteTeam} />)}
+          {nonWaitlistTeams.map((team) => <Team key={team.id} team={team} deleteTeam={this.deleteTeam} time={time} />)}
         </div>
       </div>
     );
