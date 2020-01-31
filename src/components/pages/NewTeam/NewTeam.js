@@ -29,7 +29,7 @@ class NewTeam extends React.Component {
     e.preventDefault();
     const newTeam = {
       name: this.state.name,
-      date: this.state.date,
+      date: '',
       time: this.state.time,
       player1: this.state.player1,
       player2: this.state.player2,
@@ -75,9 +75,15 @@ class NewTeam extends React.Component {
     this.setState({ player5: e.target.value });
   }
 
-  render() {
-    const { players } = this.state;
+  renderPlayerOptions = () => this.state.players.map((player) => {
+    const name = `${player.firsName} ${player.lastName}`;
+    if (name !== this.state.player1 || name !== this.state.player2 || name !== this.state.player3 || name !== this.state.player4 || name !== this.state.player5) {
+      return ((<option key={player.id} id={player.id}>{player.firstName} {player.lastName}</option>));
+    }
+    return null;
+  })
 
+  render() {
     return (
       <div className="NewTeam">
         <h1>New Team Form</h1>
@@ -101,7 +107,7 @@ class NewTeam extends React.Component {
             value={this.state.player1}
             onChange={this.player1Change}>
               <option>Select Player 1</option>
-              { players.map((player) => ((<option>{player.firstName} {player.lastName}</option>))) }
+              { this.renderPlayerOptions() }
             </select>
           </div>
           <div className="form-group">
@@ -111,7 +117,7 @@ class NewTeam extends React.Component {
             value={this.state.player2}
             onChange={this.player2Change}>
               <option>Select Player 2</option>
-              { players.map((player) => ((<option>{player.firstName} {player.lastName}</option>))) }
+              { this.renderPlayerOptions() }
             </select>
           </div>
           <div className="form-group">
@@ -121,7 +127,7 @@ class NewTeam extends React.Component {
             value={this.state.player3}
             onChange={this.player3Change}>
               <option>Select Player 3</option>
-              { players.map((player) => ((<option>{player.firstName} {player.lastName}</option>))) }
+              { this.renderPlayerOptions() }
             </select>
           </div>
           <div className="form-group">
@@ -131,7 +137,7 @@ class NewTeam extends React.Component {
             value={this.state.player4}
             onChange={this.player4Change}>
               <option>Select Player 4</option>
-              { players.map((player) => ((<option>{player.firstName} {player.lastName}</option>))) }
+              { this.renderPlayerOptions() }
             </select>
           </div>
           <div className="form-group">
@@ -141,7 +147,7 @@ class NewTeam extends React.Component {
             value={this.state.player5}
             onChange={this.player5Change}>
               <option>Select Player 5</option>
-              { players.map((player) => ((<option>{player.firstName} {player.lastName}</option>))) }
+              { this.renderPlayerOptions() }
             </select>
           </div>
           <button className="btn btn-primary" onClick={this.saveTeamEvent}>Save Team</button>

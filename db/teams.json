@@ -1,7 +1,7 @@
 {
   "team1": {
     "name": "Bulls",
-    "date": "01/23/2020",
+    "date": "2020-01-29T03:17:18.264Z",
     "time": "7:15am CST",
     "player1": "Delorean Sparks",
     "player2": "Eddie Shelton",
@@ -13,7 +13,7 @@
 
   "team2": {
     "name": "Clippers",
-    "date": "01/23/2020",
+    "date": "2020-01-23T03:16:18.264Z",
     "time": "7:17am CST",
     "player1": "Lawson Jones",
     "player2": "Lamar Poe",
@@ -25,7 +25,7 @@
 
   "team3": {
     "name": "Lakers",
-    "date": "01/23/2020",
+    "date": "2020-01-25T03:16:18.264Z",
     "time": "7:30am CST",
     "player1": "Nick Lee",
     "player2": "Leavett Biles",
@@ -37,7 +37,7 @@
 
   "team4": {
     "name": "Grizzlies",
-    "date": "01/23/2020",
+    "date": "2020-01-29T03:16:16.264Z",
     "time": "7:35am CST",
     "player1": "Solondro Lee",
     "player2": "Malcolm Crawford",
@@ -49,7 +49,7 @@
 
   "team5": {
     "name": "Celtics",
-    "date": "01/23/2020",
+    "date": "2020-01-29T03:13:18.264Z",
     "time": "7:36am CST",
     "player1": "Luke Coleman",
     "player2": "Mitch Wersing",
