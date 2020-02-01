@@ -1,0 +1,21 @@
+.logo-image {
+  height: 75px;
+  width: auto;
+}
+
+.navvy {
+  background-color: transparent;
+}
+
+#navvy-link {
+  // background-color: #ffc107;
+  border-radius: 10px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 20px;
+}
+
+#navvy-link:hover {
+  color: rgb(209, 151, 104);
+}

@@ -24,7 +24,7 @@ class SingleTeamView extends React.Component {
     const { team } = this.state;
     const waitlistTeam = {
       name: team.name,
-      time: team.time,
+      time: new Date(),
       player1: team.player1,
       date: team.date,
       player2: team.player2,
@@ -46,7 +46,7 @@ class SingleTeamView extends React.Component {
       name: team.name,
       time: team.time,
       player1: team.player1,
-      date: new Date(),
+      date: team.date,
       player2: team.player2,
       player3: team.player3,
       player4: team.player4,

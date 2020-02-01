@@ -99,8 +99,9 @@ class NewTeam extends React.Component {
               onChange={this.nameChange}
             />
           </div>
+          <h3>Player Names</h3>
+          <div className="container d-flex">
           <div className="form-group">
-            <label htmlFor="player-name"><h3>Player Names</h3></label>
             <select
             className="form-control select-css"
             id="player-name"
@@ -149,6 +150,7 @@ class NewTeam extends React.Component {
               <option>Select Player 5</option>
               { this.renderPlayerOptions() }
             </select>
+          </div>
           </div>
           <button className="btn btn-dark" onClick={this.saveTeamEvent}>Save Team</button>
         </form>

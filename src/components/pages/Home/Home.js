@@ -8,9 +8,10 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
-        <h1>Home</h1>
-        <Link className="btn btn-primary" to="">Join Team</Link>
-        <Link className="btn btn-secondary" to="/teams/new">We have our Team</Link>
+        <div className="container home2">
+        <h1>I Got Next!</h1>
+        <Link className="btn btn-outline-dark btn-large hey" to="/teams/new">We have our Team</Link>
+        </div>
       </div>
     );
   }
