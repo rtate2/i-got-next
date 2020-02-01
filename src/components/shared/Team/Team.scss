@@ -1,3 +1,13 @@
-.Team {
-  display: block;
+$colour: rgb(209, 151, 104);
+
+.teamCard {
+  // background-color: rgb(209, 151, 104);
+  background-color: transparentize($colour, $amount: .1);
+  padding: 20px 0;
 }
+
+.teamBtn {
+  color: white;
+}
+
+// ​#d19768
