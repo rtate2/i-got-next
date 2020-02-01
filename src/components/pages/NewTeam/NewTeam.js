@@ -88,8 +88,8 @@ class NewTeam extends React.Component {
       <div className="NewTeam">
         <h1>New Team Form</h1>
         <form>
-          <div className="form-group">
-            <label htmlFor="team-name">Team Name</label>
+          <div className="form-group input-css">
+            <label htmlFor="team-name"><h3>Team Name</h3></label>
             <input
               type="text"
               className="form-control"
@@ -100,9 +100,9 @@ class NewTeam extends React.Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="player-name">Player Names</label>
+            <label htmlFor="player-name"><h3>Player Names</h3></label>
             <select
-            className="form-control"
+            className="form-control select-css"
             id="player-name"
             value={this.state.player1}
             onChange={this.player1Change}>
@@ -112,7 +112,7 @@ class NewTeam extends React.Component {
           </div>
           <div className="form-group">
           <select
-            className="form-control"
+            className="form-control select-css"
             id="player-name"
             value={this.state.player2}
             onChange={this.player2Change}>
@@ -122,7 +122,7 @@ class NewTeam extends React.Component {
           </div>
           <div className="form-group">
             <select
-            className="form-control"
+            className="form-control select-css"
             id="player-name"
             value={this.state.player3}
             onChange={this.player3Change}>
@@ -132,7 +132,7 @@ class NewTeam extends React.Component {
           </div>
           <div className="form-group">
             <select
-            className="form-control"
+            className="form-control select-css"
             id="exampleFormControlSelect1"
             value={this.state.player4}
             onChange={this.player4Change}>
@@ -142,7 +142,7 @@ class NewTeam extends React.Component {
           </div>
           <div className="form-group">
             <select
-            className="form-control"
+            className="form-control select-css"
             id="exampleFormControlSelect1"
             value={this.state.player5}
             onChange={this.player5Change}>
@@ -150,7 +150,7 @@ class NewTeam extends React.Component {
               { this.renderPlayerOptions() }
             </select>
           </div>
-          <button className="btn btn-primary" onClick={this.saveTeamEvent}>Save Team</button>
+          <button className="btn btn-dark" onClick={this.saveTeamEvent}>Save Team</button>
         </form>
       </div>
     );
