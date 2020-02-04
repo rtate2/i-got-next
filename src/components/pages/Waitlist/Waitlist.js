@@ -13,9 +13,19 @@ class Waitlist extends React.Component {
   }
 
   componentDidMount() {
+    this.getAllTeams();
+  }
+
+  getAllTeams = () => {
     teamData.getTeams()
       .then((teams) => this.setState({ teams, isWaitListView: true }))
       .catch((error) => console.error('error from get teams for waitlist', error));
+  }
+
+  deleteTeam = (teamId) => {
+    teamData.deleteTeam(teamId)
+      .then(() => this.getAllTeams())
+      .catch((error) => console.error('error deleting team', error));
   }
 
   render() {

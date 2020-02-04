@@ -26,7 +26,7 @@ class SingleTeamView extends React.Component {
       name: team.name,
       time: new Date(),
       player1: team.player1,
-      date: team.date,
+      date: new Date(),
       player2: team.player2,
       player3: team.player3,
       player4: team.player4,
@@ -60,9 +60,9 @@ class SingleTeamView extends React.Component {
 
   buildButtons = () => {
     if (this.state.team.isWaitlist === false) {
-      return <button className="btn btn-primary" onClick={this.addToWaitlist}>Add to Waitlist</button>;
+      return <button className="btn btn-outline-dark" onClick={this.addToWaitlist}>Add to Waitlist</button>;
     }
-    return <button className="btn btn-primary" onClick={this.removeFromWaitlist}>Remove From Waitlist</button>;
+    return <button className="btn btn-outline-dark" onClick={this.removeFromWaitlist}>Remove From Waitlist</button>;
   }
 
   render() {
@@ -71,8 +71,7 @@ class SingleTeamView extends React.Component {
     return (
       <div className="SingleTeamView">
         <h1>Single Team View</h1>
-        <div className="card">
-          {/* <p>Date: {team.date}</p> */}
+        <div className="card singleViewCard">
           <div className="card-body">
             <h4 className="card-title">{team.name}</h4>
             <p>{team.player1}</p>
@@ -89,16 +88,3 @@ class SingleTeamView extends React.Component {
 }
 
 export default SingleTeamView;
-
-// this.setState({ isWaitlist: true });
-
-// componentDidMount() {
-//   const { teamId } = this.props.match.params;
-//   if (teamId) {
-//     teamData.getSingleTeam(teamId)
-//       .then((response) => {
-//         this.setState({ team: response.data, isWaitlist: true });
-//       })
-//       .catch((error) => console.error('error from  get single team', error));
-//   }
-// }

@@ -8,16 +8,17 @@
 }
 
 .NewTeam2 {
-  background-image: url("https://i.pinimg.com/originals/85/aa/a3/85aaa3916ed4b19cfa0b6fe6e9fdec61.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-image: url("https://i.pinimg.com/originals/85/aa/a3/85aaa3916ed4b19cfa0b6fe6e9fdec61.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
   padding: 15px;
-  border: black 2px solid;
+  border: rgb(209, 151, 104) 2px solid;
   border-radius: 15px;
   margin: 50px auto;
   width: 80%;
   color: white;
+  background-color: rgb(209, 151, 104);
 }
 
 .select-css {
@@ -64,4 +65,8 @@
 
 .fg {
   margin: 15px;
+}
+
+h1 {
+  color: white;
 }

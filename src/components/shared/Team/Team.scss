@@ -1,4 +1,4 @@
-$colour: rgb(209, 151, 104);
+@import '../../../styles/variables';
 
 .teamCard {
   // background-color: rgb(209, 151, 104);
@@ -9,5 +9,10 @@ $colour: rgb(209, 151, 104);
 .teamBtn {
   color: white;
 }
+
+// .deleteButton {
+//   height: 20vh;
+//   width: auto;
+// }
 
 // ​#d19768
