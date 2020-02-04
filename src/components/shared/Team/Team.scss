@@ -1,3 +1,18 @@
-.Team {
-  display: block;
+@import '../../../styles/variables';
+
+.teamCard {
+  // background-color: rgb(209, 151, 104);
+  background-color: transparentize($colour, $amount: .1);
+  padding: 20px 0;
 }
+
+.teamBtn {
+  color: white;
+}
+
+// .deleteButton {
+//   height: 20vh;
+//   width: auto;
+// }
+
+// ​#d19768

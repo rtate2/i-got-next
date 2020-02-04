@@ -1,3 +1,10 @@
+@import '../../../styles/variables';
+
 .Player {
   display: block;
+}
+
+.playerCard {
+  // background-color: $colour;
+  background-color: transparentize($colour, $amount: .1);
 }

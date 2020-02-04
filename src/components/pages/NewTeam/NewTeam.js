@@ -86,7 +86,8 @@ class NewTeam extends React.Component {
   render() {
     return (
       <div className="NewTeam">
-        <h1>New Team Form</h1>
+        <h1>Create Your New Team</h1>
+        <div className="container NewTeam2">
         <form>
           <div className="form-group input-css">
             <label htmlFor="team-name"><h3>Team Name</h3></label>
@@ -101,7 +102,7 @@ class NewTeam extends React.Component {
           </div>
           <h3>Player Names</h3>
           <div className="container d-flex">
-          <div className="form-group">
+          <div className="form-group fg">
             <select
             className="form-control select-css"
             id="player-name"
@@ -111,7 +112,7 @@ class NewTeam extends React.Component {
               { this.renderPlayerOptions() }
             </select>
           </div>
-          <div className="form-group">
+          <div className="form-group fg">
           <select
             className="form-control select-css"
             id="player-name"
@@ -121,7 +122,7 @@ class NewTeam extends React.Component {
               { this.renderPlayerOptions() }
             </select>
           </div>
-          <div className="form-group">
+          <div className="form-group fg">
             <select
             className="form-control select-css"
             id="player-name"
@@ -131,7 +132,7 @@ class NewTeam extends React.Component {
               { this.renderPlayerOptions() }
             </select>
           </div>
-          <div className="form-group">
+          <div className="form-group fg">
             <select
             className="form-control select-css"
             id="exampleFormControlSelect1"
@@ -141,7 +142,7 @@ class NewTeam extends React.Component {
               { this.renderPlayerOptions() }
             </select>
           </div>
-          <div className="form-group">
+          <div className="form-group fg">
             <select
             className="form-control select-css"
             id="exampleFormControlSelect1"
@@ -154,6 +155,7 @@ class NewTeam extends React.Component {
           </div>
           <button className="btn btn-dark" onClick={this.saveTeamEvent}>Save Team</button>
         </form>
+        </div>
       </div>
     );
   }
