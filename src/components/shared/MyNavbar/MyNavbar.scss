@@ -19,3 +19,11 @@
 #navvy-link:hover {
   color: rgb(209, 151, 104);
 }
+
+.appTitle {
+  margin-left: -40px;
+  font-style: italic;
+  color: white;
+  text-shadow: rgb(209, 151, 104) 2px 1px;
+  // put shadow box around it
+}
