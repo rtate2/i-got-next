@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# I-Got-Next-!
 
-## Available Scripts
+## Technologies Used
+* React
+* React Router DOM
+* JavaScript
+* Bootstrap
+* SCSS
+* Firebase
+* Git
+* GitHub
 
-In the project directory, you can run:
+## Description
+I love to play basketball recreationally, not only because it keeps me in shape, but also due to the opportunity it presents to develop and forge lasting relationships. But, no matter what basketball gym I play in, there are always issues with the order of which players/teams are set to play.
 
-### `npm start`
+ Some gyms have a signup list in which the players sign their names, but it never fails that someone’s name is scratched off, someone signs their name in multiple spots, the list comes up missing altogether, or there are multiple lists circulating within the gym. Other gyms seem to go by the honor system and rely on the players themselves to keep up with the order of games and teams. There seems to always be a person that causes problems no matter what the system is. 
+ 
+ The “I Got Next!” app provides a solution to the issue.  The easy to use app displays the teams, in order, of which games will be played; making it easy for users to know when they will play and who they will be playing with.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ ![I Got Next Preview](home page)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The users will have access to the app via the gym kiosk/iPad where they will create the teams and view the order of when the games will be played. Upon visiting the app the user will be able to view the available players by clicking the `Available Players` link within the navbar.
 
-### `npm test`
+![I Got Next Preview](available players)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After viewing the available players, the user can navigate back to the home page by clicking `Home` link or the logo within the navbar. Once back to the homepage, the user will click the `We have our Team` button which will take the user to a form.
 
-### `npm run build`
+![I Got Next Preview](create team form)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When the user sees the `Create Your New Team` form, there is an input to create a team name and dropdown menus to select the team of five. The user will click the save button to create the new.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The new team will print to the `Teams` page where the user can review the team by clicking the "View Team" button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![I Got Next Preview](Teams page)
 
-### `npm run eject`
+![I Got Next Preview](View Team view)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Once within the Single Team View and the user's team is assemble and ready to commit, the `Add to Waitlist` button will  be selected to add to the "Waitlist" and will be sorted by the time the team was added - the newest addition will be at the bottom of the list.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![I Got Next Preview](Waitlist view)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The user can remove the team from the waitlist if anyone on the team becomes unavailable or if anyone on the team decides not to play with the particular team - the button is within the Single Team View
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![I Got Next Preview](Remove from waitlist button)
 
-## Learn More
+The user can user can delete the entire team from either the Team page or Waitlist page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## How to run
+* Follow the link to view the application:
+https://i-got-next-frontend-capstone.firebaseapp.com/home
